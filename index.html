@@ -9,12 +9,12 @@
     <title>Sahid is a Lady Killer</title>
     <link rel="stylesheet" href="style.css" />
     <script>
-      // Show confirmation prompt before loading the game
-      //   let isReady = confirm("Are you ready to kill the lady killer?");
-      //   if (!isReady) {
-      //     document.body.innerHTML = "<h1>Reload the page when you're ready!</h1>";
-      //     throw new Error("User canceled the game");
-      //   }
+      //   Show confirmation prompt before loading the game
+      let isReady = confirm("Are you ready to kill the lady killer?");
+      if (!isReady) {
+        document.body.innerHTML = "<h1>Reload the page when you're ready!</h1>";
+        throw new Error("User canceled the game");
+      }
     </script>
   </head>
   <body>
