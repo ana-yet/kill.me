@@ -31,10 +31,11 @@ paw.style.top = `${pawY}px`;
 
 // Load sound effects
 const hitSounds = [
-  new Audio("m4.mp3"),
+  new Audio("blast.wav"),
   new Audio("m1.mp3"),
   new Audio("m2.mp3"),
   new Audio("m3.mp3"),
+  new Audio("m4.mp3"),
 ];
 
 let currentHitSound = null; // Track currently playing sound
@@ -110,7 +111,7 @@ function checkCollision() {
 
     playHitSound(); // Play new hit sound
 
-    if (score >= 6) {
+    if (score >= 5) {
       gameOver = true;
       clearInterval(moveInterval);
       clearInterval(pawMoveInterval);
