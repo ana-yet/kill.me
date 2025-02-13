@@ -62,11 +62,12 @@ body {
 
 /* Victory Message */
 #victory {
+  font-family: "Courier New", Courier, monospace;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 40px;
+  font-size: 24px;
   color: #000;
   background: rgba(255, 255, 255, 0.9);
   padding: 15px;
@@ -74,6 +75,7 @@ body {
   display: none;
   z-index: 1100;
   text-align: center;
+  font-weight: bold;
 }
 
 /* Hit Counter */
