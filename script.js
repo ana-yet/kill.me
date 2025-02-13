@@ -230,7 +230,7 @@ function checkCollision() {
     } else {
       clearInterval(moveInterval);
       setTimeout(() => {
-        mouse.src = "./sahid.jpg";
+        mouse.src = "./sahid.png";
         isDamaged = false;
         canscore = true;
         moveInterval = setInterval(moveMouse, 20);
