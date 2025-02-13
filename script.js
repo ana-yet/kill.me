@@ -172,10 +172,16 @@ document.addEventListener("click", function startBGM() {
   document.removeEventListener("click", startBGM);
 });
 
-document.addEventListener("visibilitychange", function () {
-  if (document.hidden) {
-    bgm.pause();
-  } else {
-    bgm.play().catch((error) => console.log("Autoplay blocked:", error));
-  }
+// document.addEventListener("visibilitychange", function () {
+//   if (document.hidden) {
+//     bgm.pause();
+//   } else {
+//     bgm.play().catch((error) => console.log("Autoplay blocked:", error));
+//   }
+// });
+// Set the background music volume when it starts
+document.addEventListener("click", function startBGM() {
+  bgm.volume = 0.5; // Set volume to 50% (range is 0.0 to 1.0)
+  bgm.play().catch((error) => console.log("Autoplay blocked:", error));
+  document.removeEventListener("click", startBGM);
 });
