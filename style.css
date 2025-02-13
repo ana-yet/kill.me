@@ -1,0 +1,105 @@
+/* General Reset */
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #000 url("bgis.JPG") no-repeat center top / cover;
+  font-family: Arial, sans-serif;
+  cursor: none;
+}
+
+/* Game Elements */
+#paw,
+#slingshot,
+#mouse {
+  position: absolute;
+}
+
+#paw {
+  width: 50px;
+  height: 50px;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+#mouse {
+  width: 75px;
+  height: 100px;
+  z-index: 1;
+}
+
+#mouse.dead {
+  width: 300px;
+  height: 300px;
+  z-index: 1100;
+}
+
+/* Slingshot */
+#slingshot {
+  width: 100px;
+  top: 60%;
+  left: 51.6%;
+  transform: translate(-50%, -50%);
+}
+
+/* Score & Target Display */
+#score,
+#target {
+  position: fixed;
+  top: 10px;
+  font-size: 20px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+#score {
+  left: 10px;
+}
+
+#target {
+  left: 120px;
+}
+
+/* Victory Message */
+#victory {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: #000;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  border-radius: 10px;
+  display: none;
+  z-index: 1100;
+  text-align: center;
+}
+
+/* Hit Counter */
+#hit {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+/* Developer Contact Button */
+#maker-btn {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background-color: #000;
+  color: #a3a3a3;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+#maker-btn:hover {
+  background-color: #145dbf;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>Sahid is a Lady Killer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      // Show confirmation prompt before loading the game
+      let isReady = confirm("Are you ready to kill the lady killer?");
+      if (!isReady) {
+        document.body.innerHTML = "<h1>Reload the page when you're ready!</h1>";
+        throw new Error("User canceled the game");
+      }
+    </script>
+  </head>
+  <body>
+    <!-- The Cat's Paw (follows cursor) -->
+    <img id="paw" src="s.png" alt="Cat Paw" loading="lazy" />
+
+    <!-- Background Music -->
+    <audio id="bgm" src="bgm.mp3" loop preload="auto"></audio>
+
+    <!-- The Moving Mouse (Target) -->
+    <img id="mouse" src="sahid.jpg" alt="Mouse" loading="lazy" />
+
+    <!-- Slingshot -->
+    <img id="slingshot" src="Y.png" alt="Slingshot" loading="lazy" />
+
+    <!-- Sound Effects -->
+    <audio id="damageSound" src="a.mp3" preload="auto"></audio>
+    <audio id="bgmt" src="bgmt.mp3" preload="auto"></audio>
+    <audio id="one" src="one.mp3" preload="auto"></audio>
+
+    <!-- Score & Target Display -->
+    <div id="score">Score: 0</div>
+    <div id="target">Target: 6</div>
+
+    <!-- Victory Message (Hidden Until Game Over) -->
+    <div id="victory" style="display: none">You are a pro player!</div>
+
+    <!-- Visitor Hit Counter -->
+    <div id="hit">
+      <!-- <a href="https://hits.seeyoufarm.com"> -->
+      <!-- <img
+          src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fllldayanlll.github.io%2Fbongoboltu%2F&count_bg=%23112600&title_bg=%23000000&icon=&icon_color=%23E7E7E7&title=visits%28today%2Ftotal%29&edge_flat=false"
+        />
+      </a> -->
+      <h3>haha kill the mad person</h3>
+    </div>
+
+    <!-- Developer Contact Button -->
+    <a
+      id="maker-btn"
+      href="https://www.facebook.com/ana.y37.h0"
+      target="_blank"
+    >
+      Contact Developer
+    </a>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+  </body>
+</html>
