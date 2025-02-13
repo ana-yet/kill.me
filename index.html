@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="style.css" />
     <script>
       // Show confirmation prompt before loading the game
-      let isReady = confirm("Are you ready to kill the lady killer?");
-      if (!isReady) {
-        document.body.innerHTML = "<h1>Reload the page when you're ready!</h1>";
-        throw new Error("User canceled the game");
-      }
+      //   let isReady = confirm("Are you ready to kill the lady killer?");
+      //   if (!isReady) {
+      //     document.body.innerHTML = "<h1>Reload the page when you're ready!</h1>";
+      //     throw new Error("User canceled the game");
+      //   }
     </script>
   </head>
   <body>
@@ -22,7 +22,7 @@
     <img id="paw" src="s.png" alt="Cat Paw" loading="lazy" />
 
     <!-- Background Music -->
-    <audio id="bgm" src="bgm.mp3" loop preload="auto"></audio>
+    <audio id="bgm" src="./bg-music.mp3" loop preload="auto"></audio>
 
     <!-- The Moving Mouse (Target) -->
     <img id="mouse" src="sahid.png" alt="Mouse" loading="lazy" />
@@ -32,7 +32,7 @@
 
     <!-- Sound Effects -->
     <audio id="damageSound" src="a.mp3" preload="auto"></audio>
-    <audio id="bgmt" src="bgmt.mp3" preload="auto"></audio>
+    <audio id="bgmt" src="./win.mp3" preload="auto"></audio>
     <audio id="one" src="one.mp3" preload="auto"></audio>
 
     <!-- Score & Target Display -->
@@ -40,7 +40,9 @@
     <div id="target">Target: 6</div>
 
     <!-- Victory Message (Hidden Until Game Over) -->
-    <div id="victory" style="display: none">You are a pro player!</div>
+    <div id="victory" style="display: none">
+      Shiray Shiray Rokto Amra Lady Killer Sahid Vai er Vokto!
+    </div>
 
     <!-- Visitor Hit Counter -->
     <div id="hit">
@@ -49,7 +51,9 @@
           src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fllldayanlll.github.io%2Fbongoboltu%2F&count_bg=%23112600&title_bg=%23000000&icon=&icon_color=%23E7E7E7&title=visits%28today%2Ftotal%29&edge_flat=false"
         />
       </a> -->
-      <h3>haha kill the mad person</h3>
+      <button class="bbb">
+        <a href="https://www.facebook.com/tasin.ahamed.7777">Legend</a>
+      </button>
     </div>
 
     <!-- Developer Contact Button -->

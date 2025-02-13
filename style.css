@@ -103,3 +103,11 @@ body {
 #maker-btn:hover {
   background-color: #145dbf;
 }
+.bbb > a {
+  text-decoration: none;
+  font-size: 1vw;
+  font-weight: 800;
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+  padding: 10px 10px;
+}
